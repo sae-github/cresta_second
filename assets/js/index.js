@@ -1,9 +1,9 @@
 "use strict";
 
+// ドロワーメニュー
 jQuery(function () {
   jQuery('#js-hamburger').click(function () {
     jQuery('body').toggleClass('is-drawerActive');
-
     if (jQuery(this).attr('aria-expanded') == 'false') {
       jQuery(this).attr('aria-expanded', 'true');
       jQuery('#js-global-menu').attr('area-hidden', 'false');
@@ -12,6 +12,8 @@ jQuery(function () {
       jQuery('#js-global-menu').attr('area-hidden', 'true');
     }
   });
+
+  // メインビューのスライダー
   $('#js-slider').slick({
     autoplay: true,
     arrows: false,
@@ -19,6 +21,8 @@ jQuery(function () {
     fade: true,
     speed: 800
   });
+
+  // スムーススクロール
   jQuery('a[href^="#"]').click(function () {
     var header = jQuery(".l-header").innerHeight();
     var speed = 300;
@@ -30,6 +34,8 @@ jQuery(function () {
     }, speed);
     return false;
   });
+
+  // メインビュー過ぎたら背景色つける
   jQuery(window).on('scroll', function () {
     if (jQuery('.p-mv__slider').height() - 80 < jQuery(this).scrollTop()) {
       jQuery('.l-header').addClass('is-scrolled');
