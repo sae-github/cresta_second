@@ -1,0 +1,15 @@
+.p-contact {
+  background: url(../images/top/contact__bg.jpg) no-repeat center center / cover;
+
+&__text {
+  text-align: center;
+  font-size: rem(20);
+  letter-spacing: calc(50em / 1000);
+  color: #fff;
+  margin-top: rem(80);
+}
+
+&__btn {
+  margin-top: rem(30);
+}
+}

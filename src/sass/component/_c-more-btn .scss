@@ -1,0 +1,22 @@
+.c-more-btn {
+  background-color: $accent-color;
+  font-weight: bold;
+  font-family: $english-font-family;
+  width: rem(235);
+  max-width: 100%;
+  padding: rem(20);
+  border-radius: rem(80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  border: rem(1) solid transparent;
+
+  &:hover,
+  &:active {
+    background-color: $text-color;
+    color: $accent-color;
+    transition: .3s;
+    border: rem(1) $accent-color solid;
+  }
+}

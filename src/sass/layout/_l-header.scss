@@ -1,0 +1,38 @@
+.l-header {
+  padding: rem(35) 0;
+  height: rem(96);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: $header;
+  transition: background-color .3s;
+  @include mq(md) {
+    padding: rem(25) 0;
+  }
+
+  &__inner {
+    padding: 0 rem(15);
+    @include mq(md) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; 
+      max-width: rem(1230);
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    color: #fff;
+    font-size: rem(26);
+    letter-spacing: calc(50em / 1000);
+    font-family: $english-font-family;
+    font-style: italic;
+  }
+}
+
+.l-header.is-scrolled {
+  transition: background-color .3s;
+  background-color: #282F35;
+}

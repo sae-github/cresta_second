@@ -1,0 +1,53 @@
+.p-mv {
+  position: relative;
+  height: rem(599);
+  @include mq(md) {
+    height: rem(752);
+  }
+
+  &__slider {
+    height: inherit;
+    li,
+    img {
+      height: rem(599);
+      width: 100%;
+      object-fit: cover;
+      @include mq(md) {
+        height: rem(752);
+      }
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 rem(12);
+  }
+
+  &__title {
+    color: #fff;
+    font-size: rem(37);
+    letter-spacing: calc(50em / 1000);
+    font-family: $english-font-family;
+    @include mq(md) {
+      font-size: rem(70);
+    }
+  }
+
+  &__text {
+    text-align: center;
+    color: #fff;
+    font-size: rem(30);
+    margin-top: rem(59);
+    letter-spacing: calc(50em / 1000);
+    line-height: calc(50 / 30);
+    font-weight: bold;
+    @include mq(md) {
+      font-size: rem(40);
+      text-align: left;
+    }
+  }
+}

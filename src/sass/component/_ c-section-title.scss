@@ -1,0 +1,34 @@
+
+
+@mixin title-border($color) {
+  position: absolute;
+  content: "";
+  background-color: $color;
+  width: rem(100);
+  height: rem(5);
+  margin-left: rem(30);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.c-section-title {
+  font-size: rem(30);
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: calc(50em / 1000);
+  font-family: $english-font-family;
+  position: relative;
+  &::after {
+    @include title-border($text-color);
+  }
+  @include mq(md) {
+    font-size: rem(60);
+  }
+}
+
+.c-section-title.--white {
+  color: #fff;
+  &::after {
+    @include title-border(#fff);
+  }
+}

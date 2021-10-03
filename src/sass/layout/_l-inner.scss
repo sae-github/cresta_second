@@ -1,0 +1,9 @@
+.l-inner {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+  @include mq(md) {
+    width: $l-inner + ($padding-left + $padding-right);
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}

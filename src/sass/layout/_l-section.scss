@@ -1,0 +1,6 @@
+.l-section {
+  padding: rem(104) 0 rem(45);
+  @include mq(md) {
+    padding: rem(111) 0 rem(88);
+  }
+}

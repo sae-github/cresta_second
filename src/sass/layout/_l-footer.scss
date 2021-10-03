@@ -1,0 +1,13 @@
+.l-footer {
+  background-color: #fff;
+  padding: rem(30) 0;
+
+  &__copy-right {
+    text-align: center;
+    font-size: rem(14);
+    font-weight: bold;
+    letter-spacing: calc(50em / 1000);
+  }
+}
+
+

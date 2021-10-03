@@ -1,0 +1,55 @@
+.p-global-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #282f35;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  transform: translateX(200%);
+  @include mq(md) {
+    transform: translateX(0);
+    position: inherit;
+    top: auto;
+    left: auto;
+    right: auto;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    @include mq(md) {
+      flex-direction: row;
+
+    }
+  }
+
+  &__item {
+    color: #fff;
+    letter-spacing: calc(50em / 1000);
+    &:not(:first-child) {
+      margin-top: rem(30);
+      @include mq(md) {
+        margin-top: 0;
+      }
+    }
+
+    &:not(:last-child) {
+      @include mq(md) {
+        margin-right: rem(33);
+      }
+    }
+  }
+}
+
+.is-drawerActive .p-global-nav {
+  transform: translateX(0px);
+  transition: 0.3s;
+}
