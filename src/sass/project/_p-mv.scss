@@ -25,6 +25,10 @@
     transform: translate(-50%, -50%);
     width: 100%;
     padding: 0 rem(12);
+    @include mq(md) {
+      max-width: 76.875rem;
+      top: 67%;
+    }
   }
 
   &__title {
@@ -48,6 +52,14 @@
     @include mq(md) {
       font-size: rem(40);
       text-align: left;
+      margin-top: rem(30);
+    }
+
+    span {
+      display: none;
+      @include mq(md) {
+        display: inline-block;
+      }
     }
   }
 }
