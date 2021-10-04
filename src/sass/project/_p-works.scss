@@ -12,6 +12,7 @@
   align-items: center;
   @include mq(md) {
     flex-direction: row;
+    margin-top: rem(58);
   }
 }
 
