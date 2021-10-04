@@ -31,6 +31,7 @@
   }
 
   &__item {
+    transition: opacity .3s;
     a {
       color: #fff;
       letter-spacing: calc(50em / 1000);
@@ -48,6 +49,11 @@
       @include mq(md) {
         margin-right: rem(33);
       }
+    }
+
+    &:hover {
+      opacity: .3;
+      transition: opacity .3s;
     }
   }
 }
