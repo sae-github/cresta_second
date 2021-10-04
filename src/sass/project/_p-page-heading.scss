@@ -1,12 +1,17 @@
-
 .p-page-heading {
   background: url(../images/contact/contact-page-bg.jpg) no-repeat center center / cover;
   height: rem(360);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   @include mq(md) {
     height: rem(453);
+  }
+
+  &__inner {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
   }
 
   &__title {
@@ -18,6 +23,21 @@
     font-family: $english-font-family;
     @include mq(md) {
       font-size: rem(60);
+    }
+  }
+
+  &__shadow {
+    position: absolute;
+    top: 70%;
+    left: rem(11);
+    font-size: rem(40);
+    letter-spacing: calc(50em / 1000);
+    font-weight: bold;
+    font-family: $english-font-family;
+    color: #ffffff;
+    opacity: 0.1;
+    @include mq(md) {
+      font-size: rem(90);
     }
   }
 }
