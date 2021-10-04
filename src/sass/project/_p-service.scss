@@ -18,10 +18,7 @@
     @include mq(md) {
       width: calc(100% / 3);
     }
-
-
   }
-
 
   &__img-wrapper {
     position: relative;
@@ -33,13 +30,9 @@
     }
 
     img {
-      @include mq(md) {
-        width: 100%;
-      }
+      width: 100%;
     }
   }
-
-
 
   &__text {
     position: absolute;
