@@ -1,0 +1,22 @@
+.p-form {
+  max-width: rem(730);
+  margin: 0 auto; 
+  padding: 0 rem(15);
+
+}
+
+.p-form-item {
+  &:not(:first-child) {
+    margin-top: rem(25);
+  }
+
+  &__title {
+    letter-spacing: calc(50em / 1000);
+  }
+
+  &__input {
+    margin-top: rem(5);
+  }
+}
+
+

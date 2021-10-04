@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cresta Design</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header class="l-header">
+    <div class="l-header__inner">
+      <p class="l-header__logo"><a href="index.html">Cresta Design</a></p>
+      <nav class="p-global-nav" id="js-global-menu">
+        <ul class="p-global-nav__list">
+          <li class="p-global-nav__item"><a href="index.html#concept">Concept</a></li>
+          <li class="p-global-nav__item"><a href="index.html">Service</a></li>
+          <li class="p-global-nav__item"><a href="index.html">Works</a></li>
+          <li class="p-global-nav__item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button type="button" id="js-hamburger" class="p-hamburger p-hamburger-wrapper u-mobile" aria-expanded="false">
+      <span class="p-hamburger__line">
+      </span>
+    </button>
+  </header>
+
+  <section class="p-page-heading">
+    <h1 class="p-page-heading__title">Contact</h1>
+  </section>
+
+  <div class="l-page-container">
+    <div class="p-form">
+      <form action="">
+        <dl>
+          <div class="p-form-item">
+            <dt class="p-form-item__title">お問い合わせ内容</dt>
+            <dd>
+              <div class="p-checkbox-wrapper">
+                <label class="p-checkbox" for="checkbox1">
+                  <input type="checkbox" name="checkbox1" id="checkbox1">
+                  <span class="p-checkbox__icon"></span>
+                  <span class="p-checkbox__label">資料請求</span>
+                </label>
+                <label class="p-checkbox" for="checkbox2">
+                  <input type="checkbox" name="checkbox2" id="checkbox2">
+                  <span class="p-checkbox__icon"></span>
+                  <span class="p-checkbox__label">お電話でのご相談を希望</span>
+                </label>
+                <label class="p-checkbox" for="checkbox3">
+                  <input type="checkbox" name="checkbox3" id="checkbox3">
+                  <span class="p-checkbox__icon"></span>
+                  <span class="p-checkbox__label">申し込み</span>
+                </label>
+              </div>
+            </dd>
+          </div>
+          <div class="p-form-item">
+            <dt class="p-form-item__title"><label for="name">担当者名</label></dt>
+            <dd class="p-form-item__input"><input type="text" name="担当者名" id="name" class="c-text-field"></dd>
+          </div>
+          <div class="p-form-item">
+            <dt class="p-form-item__title"><label for="tel">電話番号</label></dt>
+            <dd class="p-form-item__input"><input type="text" name="電話番号" id="tel" class="c-text-field"></dd>
+          </div>
+          <div class="p-form-item">
+            <dt class="p-form-item__title"><label for="email">メールアドレス</label></dt>
+            <dd class="p-form-item__input"><input type="email" name="メールアドレス" id="email" class="c-text-field"></dd>
+          </div>
+          <div class="p-form-item">
+            <dt class="p-form-item__title"><label for="other">その他</label></dt>
+            <dd class="p-form-item__input"><textarea name="その他" id="other" class="c-textarea"></textarea></dd>
+          </div>
+        </dl>
+        <button type="submit" class="c-submit-btn u-mAuto u-mt80">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <footer class="l-footer">
+    <div class="l-inner">
+      <p class="l-footer__copy-right">©︎cresta.design all rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/index.min.js"></script>
+</body>
+
+</html>

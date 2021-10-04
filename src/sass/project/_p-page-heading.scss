@@ -1,0 +1,23 @@
+
+.p-page-heading {
+  background: url(../images/contact/contact-page-bg.jpg) no-repeat center center / cover;
+  height: rem(360);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq(md) {
+    height: rem(453);
+  }
+
+  &__title {
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    font-size: rem(30);
+    letter-spacing: calc(100em / 1000);
+    font-family: $english-font-family;
+    @include mq(md) {
+      font-size: rem(60);
+    }
+  }
+}
