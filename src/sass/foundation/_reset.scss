@@ -34,11 +34,6 @@ html {
 body {
   line-height: 1;
   margin: 0 auto;
-  -webkit-text-size-adjust: 100%;
-
-  @media (--mobile) {
-    word-wrap: break-word;
-  }
 }
 
 ol, ul {
