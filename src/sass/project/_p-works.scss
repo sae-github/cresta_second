@@ -10,9 +10,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
   @include mq(md) {
     flex-direction: row;
-    margin-top: rem(58);
+    margin-top: rem(95);
   }
 }
 
@@ -20,3 +21,4 @@
   margin-top: rem(80);
 }
 }
+
